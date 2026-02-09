@@ -1,0 +1,12 @@
+
+{ 
+    crc :  6562240420465072908  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto 06f49996ac994f64a0776e6d9743c85f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot UART_TXer_behav xil_defaultlib.UART_TXer xil_defaultlib.glbl" , 
+    buildDate : "May 27 2020" , 
+    buildTime : "20:09:33" , 
+    linkCmd : "D:\\Vivado\\2020.1\\data\\..\\tps\\mingw\\6.2.0\\win64.o\\nt\\bin\\gcc.exe -Wa,-W  -O -Wl,--stack,104857600 -o \"xsim.dir/UART_TXer_behav/xsimk.exe\"   \"xsim.dir/UART_TXer_behav/obj/xsim_0.win64.obj\" \"xsim.dir/UART_TXer_behav/obj/xsim_1.win64.obj\" -L\"D:\\Vivado\\2020.1\\lib\\win64.o\" -lrdi_simulator_kernel   -lrdi_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Dec 24 11:06:49 2024
+# Process ID: 21032
+# Current directory: D:/desk/Vivado/lab10/lab10_1/lab10_1.runs/u2r_cmd_fifo_synth_1
+# Command line: vivado.exe -log u2r_cmd_fifo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source u2r_cmd_fifo.tcl
+# Log file: D:/desk/Vivado/lab10/lab10_1/lab10_1.runs/u2r_cmd_fifo_synth_1/u2r_cmd_fifo.vds
+# Journal file: D:/desk/Vivado/lab10/lab10_1/lab10_1.runs/u2r_cmd_fifo_synth_1\vivado.jou
+#-----------------------------------------------------------
+source u2r_cmd_fifo.tcl -notrace

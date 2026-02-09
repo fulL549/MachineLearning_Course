@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun Jan 12 15:32:37 2025
+# Process ID: 38908
+# Current directory: C:/Users/Lin Hongyu/Desktop/fulL vivado/Project_24_09_24 ≈‹¬Ìµ∆/project_1.runs/synth_1
+# Command line: vivado.exe -log led_chaser.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source led_chaser.tcl
+# Log file: C:/Users/Lin Hongyu/Desktop/fulL vivado/Project_24_09_24 ≈‹¬Ìµ∆/project_1.runs/synth_1/led_chaser.vds
+# Journal file: C:/Users/Lin Hongyu/Desktop/fulL vivado/Project_24_09_24 ≈‹¬Ìµ∆/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source led_chaser.tcl -notrace

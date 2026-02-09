@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun Jan 12 16:28:57 2025
+# Process ID: 22808
+# Current directory: C:/Users/Lin Hongyu/Desktop/lab10/lab10_1/lab10_1.runs/impl_1
+# Command line: vivado.exe -log proc_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source proc_top.tcl -notrace
+# Log file: C:/Users/Lin Hongyu/Desktop/lab10/lab10_1/lab10_1.runs/impl_1/proc_top.vdi
+# Journal file: C:/Users/Lin Hongyu/Desktop/lab10/lab10_1/lab10_1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source proc_top.tcl -notrace

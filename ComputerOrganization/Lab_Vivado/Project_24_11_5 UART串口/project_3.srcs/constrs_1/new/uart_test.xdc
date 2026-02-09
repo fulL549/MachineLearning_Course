@@ -1,0 +1,10 @@
+set_property PACKAGE_PIN U18 [get_ports CLK]
+set_property PACKAGE_PIN K16 [get_ports RSTN]
+set_property PACKAGE_PIN T19 [get_ports rx_i]
+set_property PACKAGE_PIN J15 [get_ports tx_o]
+create_clock -period 20.000 -name CLK -waveform {0.000 10.000} [get_ports CLK]
+
+set_property IOSTANDARD LVCMOS33 [get_ports CLK]
+set_property IOSTANDARD LVCMOS33 [get_ports RSTN]
+set_property IOSTANDARD LVCMOS33 [get_ports rx_i]
+set_property IOSTANDARD LVCMOS33 [get_ports tx_o]

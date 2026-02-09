@@ -1,0 +1,2 @@
+Breakpoint File Version 1.0
+34 true C:/Users/Lin Hongyu/Desktop/fulL vivado/project_5/project_5.srcs/sim_1/new/fn_sw_4_tb.v

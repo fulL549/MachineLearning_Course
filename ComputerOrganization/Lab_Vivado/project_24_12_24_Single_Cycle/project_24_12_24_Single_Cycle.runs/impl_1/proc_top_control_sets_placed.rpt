@@ -1,0 +1,119 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Sun Jan 12 13:59:34 2025
+| Host         : LAPTOP-RDA9S5SE running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file proc_top_control_sets_placed.rpt
+| Design       : proc_top
+| Device       : xc7z010
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    41 |
+|    Minimum number of control sets                        |    41 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   151 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    41 |
+| >= 0 to < 4        |    15 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     8 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     2 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    12 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             130 |           32 |
+| No           | No                    | Yes                    |             223 |           83 |
+| No           | Yes                   | No                     |             107 |           41 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |             175 |           41 |
+| Yes          | Yes                   | No                     |              30 |            5 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+|                      Clock Signal                     |                                                 Enable Signal                                                 |                                                                     Set/Reset Signal                                                                     | Slice Load Count | Bel Load Count | Bels / Slice |
++-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+|  u_top/u_mips/u_datapath/realpc_reg[6]_6[0]           |                                                                                                               | u_top/u_mips/u_datapath/realpc_reg[6]_5[1]                                                                                                               |                1 |              1 |         1.00 |
+|  u_top/u_mips/u_datapath/realpc_reg[6]_6[0]           |                                                                                                               | u_top/u_mips/u_datapath/realpc_reg[6]_7[0]                                                                                                               |                1 |              1 |         1.00 |
+|  u_top/u_mips/u_datapath/realpc_reg[6]_6[0]           |                                                                                                               | u_top/u_mips/u_datapath/realpc_reg[6]_5[0]                                                                                                               |                1 |              1 |         1.00 |
+|  u_top/u_mips/u_controller/u_maindec/aluop1_reg[0]/G0 |                                                                                                               |                                                                                                                                                          |                1 |              1 |         1.00 |
+|  u_top/u_mips/u_controller/u_maindec/regdst1_reg/G0   |                                                                                                               |                                                                                                                                                          |                1 |              1 |         1.00 |
+|  u_top/u_mips/u_controller/u_maindec/aluop1_reg[1]/G0 |                                                                                                               |                                                                                                                                                          |                1 |              1 |         1.00 |
+|  u_top/u_mips/u_datapath/realpc_reg[5]_3              |                                                                                                               | u_top/u_mips/u_datapath/jump1                                                                                                                            |                1 |              1 |         1.00 |
+|  u_top/u_mips/u_datapath/realpc_reg[7]_4              |                                                                                                               | u_top/u_mips/u_datapath/realpc_reg[7]_3                                                                                                                  |                1 |              1 |         1.00 |
+|  clk_run_o_BUFG                                       |                                                                                                               | u_sys_monitor/u_u2r_cmd_convert/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.sckt_rd_rst_ic_reg_0[0]           |                1 |              2 |         2.00 |
+|  u_top/u_mips/u_datapath/alusrc1                      |                                                                                                               | u_top/u_mips/u_datapath/realpc_reg[4]_7                                                                                                                  |                1 |              2 |         2.00 |
+|  clk_i_IBUF_BUFG                                      |                                                                                                               | u_sys_monitor/u_run_2_uart_clock/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/SR[0]                                                                       |                1 |              2 |         2.00 |
+|  u_top/u_mips/u_datapath/realpc_reg[7]_2              |                                                                                                               | u_top/u_mips/u_datapath/realpc_reg[6]_4                                                                                                                  |                1 |              2 |         2.00 |
+|  clk_i_IBUF_BUFG                                      |                                                                                                               | u_sys_monitor/u_u2r_cmd_convert/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rst_d2                                                                       |                1 |              2 |         2.00 |
+|  clk_run_o_BUFG                                       |                                                                                                               | u_sys_monitor/u_run_2_uart_clock/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.sckt_wr_rst_ic_reg_0              |                2 |              3 |         1.50 |
+|  clk_run_o_BUFG                                       |                                                                                                               | u_sys_monitor/u_u2r_cmd_convert/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst/arststages_ff[1] |                1 |              3 |         3.00 |
+|  clk_run_o_BUFG                                       | u_sys_monitor/u_debug_core/reg_addr0                                                                          | u_sys_monitor/u_uart_top/u_uart_rx/rst_n                                                                                                                 |                1 |              5 |         5.00 |
+|  clk_run_o_BUFG                                       | u_sys_monitor/u_debug_core/reg_rd_cnt[4]_i_1_n_0                                                              | u_sys_monitor/u_uart_top/u_uart_rx/rst_n                                                                                                                 |                2 |              5 |         2.50 |
+|  clk_run_o_BUFG                                       | u_sys_monitor/u_debug_core/mem_addr_set_en                                                                    | u_sys_monitor/u_uart_top/u_uart_rx/rst_n                                                                                                                 |                3 |              6 |         2.00 |
+|  clk_run_o_BUFG                                       | u_sys_monitor/u_debug_core/cmd_reg[7]_i_1_n_0                                                                 | u_sys_monitor/u_uart_top/u_uart_rx/rst_n                                                                                                                 |                2 |              8 |         4.00 |
+|  clk_run_o_BUFG                                       | u_sys_monitor/u_debug_core/qword_cmd[23]_i_1_n_0                                                              | u_sys_monitor/u_uart_top/u_uart_rx/rst_n                                                                                                                 |                2 |              8 |         4.00 |
+|  clk_run_o_BUFG                                       | u_sys_monitor/u_debug_core/qword_cmd[31]_i_1_n_0                                                              | u_sys_monitor/u_uart_top/u_uart_rx/rst_n                                                                                                                 |                2 |              8 |         4.00 |
+|  clk_run_o_BUFG                                       | u_sys_monitor/u_debug_core/qword_cmd[15]_i_1_n_0                                                              | u_sys_monitor/u_uart_top/u_uart_rx/rst_n                                                                                                                 |                1 |              8 |         8.00 |
+|  clk_run_o_BUFG                                       | u_sys_monitor/u_debug_core/qword_cmd[7]_i_1_n_0                                                               | u_sys_monitor/u_uart_top/u_uart_rx/rst_n                                                                                                                 |                1 |              8 |         8.00 |
+|  clk_i_IBUF_BUFG                                      | u_sys_monitor/u_uart_top/u_uart_tx/sampleData                                                                 | u_sys_monitor/u_uart_top/u_uart_rx/rst_n                                                                                                                 |                3 |              8 |         2.67 |
+|  clk_i_IBUF_BUFG                                      | u_sys_monitor/u_uart_top/inner_rx_ready                                                                       | u_sys_monitor/u_uart_top/u_uart_rx/rst_n                                                                                                                 |                1 |              8 |         8.00 |
+|  clk_i_IBUF_BUFG                                      |                                                                                                               | u_sys_monitor/u_u2r_cmd_convert/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/arststages_ff[1]         |                2 |              9 |         4.50 |
+|  clk_i_IBUF_BUFG                                      | u_sys_monitor/u_uart_top/u_uart_rx/reg_bit_count_next                                                         | u_sys_monitor/u_uart_top/u_uart_rx/rst_n                                                                                                                 |                2 |             11 |         5.50 |
+|  clk_i_IBUF_BUFG                                      | u_sys_monitor/u_run_2_uart_clock/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/E[0] | u_sys_monitor/u_run_2_uart_clock/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/SR[0]                                                                       |                2 |             12 |         6.00 |
+|  clk_i_IBUF_BUFG                                      | u_sys_monitor/u_u2r_cmd_convert/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/E[0]  | u_sys_monitor/u_u2r_cmd_convert/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/AR[0]                                                                        |                2 |             12 |         6.00 |
+|  clk_run_o_BUFG                                       | u_sys_monitor/u_u2r_cmd_convert/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/E[0]  | u_sys_monitor/u_u2r_cmd_convert/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.sckt_rd_rst_ic_reg_0[0]           |                3 |             16 |         5.33 |
+|  clk_i_IBUF_BUFG                                      | u_sys_monitor/u_u2r_cmd_convert/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/E[0]  |                                                                                                                                                          |                2 |             16 |         8.00 |
+|  clk_run_o_BUFG                                       | u_sys_monitor/u_run_2_uart_clock/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/E[0] | u_sys_monitor/u_run_2_uart_clock/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.sckt_wr_rst_ic_reg_0              |                3 |             18 |         6.00 |
+|  clk_run_o_BUFG                                       | u_sys_monitor/u_debug_core/bp_set                                                                             | u_sys_monitor/u_uart_top/u_uart_rx/rst_n                                                                                                                 |                7 |             32 |         4.57 |
+|  u_mips/u_datapath/clk                                |                                                                                                               | u_sys_monitor/u_debug_core/cmd_reg_reg[2]_0                                                                                                              |               14 |             32 |         2.29 |
+|  clk_i_IBUF_BUFG                                      | u_sys_monitor/u_debug_core/E[0]                                                                               | u_sys_monitor/u_uart_top/u_uart_rx/rst_n                                                                                                                 |                9 |             32 |         3.56 |
+|  clk_i_IBUF_BUFG                                      |                                                                                                               |                                                                                                                                                          |               14 |             63 |         4.50 |
+|  clk_run_o_BUFG                                       |                                                                                                               |                                                                                                                                                          |               15 |             67 |         4.47 |
+|  clk_run_o_BUFG                                       |                                                                                                               | u_sys_monitor/u_uart_top/u_uart_rx/rst_n                                                                                                                 |               40 |             81 |         2.03 |
+|  u_mips/u_datapath/flag0                              |                                                                                                               | u_sys_monitor/u_debug_core/cmd_reg_reg[2]_0                                                                                                              |               31 |             93 |         3.00 |
+|  clk_i_IBUF_BUFG                                      |                                                                                                               | u_sys_monitor/u_uart_top/u_uart_rx/rst_n                                                                                                                 |               24 |             94 |         3.92 |
+|  u_mips/u_datapath/clk                                | u_top/u_mips/u_controller/u_maindec/we3_i0                                                                    |                                                                                                                                                          |               18 |            144 |         8.00 |
++-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+
+

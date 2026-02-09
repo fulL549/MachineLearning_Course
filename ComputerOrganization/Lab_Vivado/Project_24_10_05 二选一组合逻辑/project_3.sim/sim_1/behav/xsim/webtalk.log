@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Webtalk v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Oct 15 11:50:38 2024
+# Process ID: 46612
+# Current directory: C:/Users/Lin Hongyu/Desktop/fulL vivado/project_3/project_3.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/Lin Hongyu/Desktop/fulL vivado/project_3/project_3.sim/sim_1/behav/xsim/xsim.dir/fn_sw_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/Lin Hongyu/Desktop/fulL vivado/project_3/project_3.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/Lin Hongyu/Desktop/fulL vivado/project_3/project_3.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/Lin -notrace
+invalid command name "[4AD4:15C0][2023-09-08T17:39:58]i001:"
+    while executing
+"[4AD4:15C0][2023-09-08T17:39:58]i001: Burn v3.10.4.4718, Windows v10.0 (Build 22621: Service Pack 0), path: C:\Windows\Temp\{93F8E8CC-BAD0-4C9B-B9FE-2..."
+    (file "C:/Users/Lin" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Tue Oct 15 11:50:38 2024...

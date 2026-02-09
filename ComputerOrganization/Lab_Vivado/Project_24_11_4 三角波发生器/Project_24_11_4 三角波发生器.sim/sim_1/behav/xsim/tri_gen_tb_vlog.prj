@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Project_24_11_4 三角波发生器.srcs/sources_1/new/tri_gen.v" \
+"../../../../Project_24_11_4 三角波发生器.srcs/sim_1/new/tri_gen_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

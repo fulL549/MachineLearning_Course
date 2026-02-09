@@ -1,0 +1,93 @@
+name: aiedumate CI/CD Pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 步骤 2: 精确设置 Java 17 环境
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: 'maven' # 启用内置的 Maven 缓存，比 actions/cache 更简单
+
+      # 步骤 3: 使用 Maven 构建和测试
+      # "package" 命令会编译、运行测试并打包成 JAR 文件
+      # 我们打包时跳过测试，因为 PR 已经跑过了，加快部署速度
+      # 如果你希望每次都跑，可以移除 -DskipTests
+      - name: Build with Maven
+        run: mvn -B clean package -DskipTests
+
+      # 步骤 4: 部署到服务器 (仅在 push 到 main 分支时执行)
+      - name: Deploy to Server via SCP
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: ${{ secrets.SERVER_PORT || 22 }}
+          # 使用精确的文件名，而不是通配符，更可靠
+          source: "aiedumate-client/target/aiedumate-client-1.0.0.jar,aiedumate-server/target/aiedumate-server-1.0.0.jar"
+          target: "/opt/aiedumate"
+          overwrite: true # 覆盖已存在的文件
+
+      # 步骤 5: 在服务器上执行安全的重启脚本
+      - name: Secure Restart on Server
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: ${{ secrets.SERVER_PORT || 22 }}
+          script: |
+            # 定义 JAR 文件路径
+            SERVER_JAR_PATH="/opt/aiedumate/aiedumate-server-1.0.0.jar"
+            CLIENT_JAR_PATH="/opt/aiedumate/aiedumate-client-1.0.0.jar"
+
+            # 停止旧的 aiedumate-server 服务
+            SERVER_PID=$(pgrep -f "aiedumate-server-1.0.0.jar")
+            if [ -n "$SERVER_PID" ]; then
+              echo "Stopping old aiedumate-server (PID: $SERVER_PID)..."
+              kill -15 $SERVER_PID
+              sleep 5
+            fi
+
+            # 停止旧的 aiedumate-client 服务
+            CLIENT_PID=$(pgrep -f "aiedumate-client-1.0.0.jar")
+            if [ -n "$CLIENT_PID" ]; then
+              echo "Stopping old aiedumate-client (PID: $CLIENT_PID)..."
+              kill -15 $CLIENT_PID
+              sleep 5
+            fi
+
+            echo "Starting new applications..."
+
+            # 启动新的 aiedumate-server，并使用 secrets 覆盖数据库配置
+            nohup java -jar \
+              -Dspring.datasource.url='${{ secrets.PROD_DB_URL }}' \
+              -Dspring.datasource.username='${{ secrets.PROD_DB_USERNAME }}' \
+              -Dspring.datasource.password='${{ secrets.PROD_DB_PASSWORD }}' \
+              $SERVER_JAR_PATH > /opt/aiedumate/server.log 2>&1 &
+            
+            echo "aiedumate-server started."
+
+            # 启动新的 aiedumate-client
+            nohup java -jar \
+              -Dserver.api.url='${{ secrets.SERVER_API_URL }}' \
+              $CLIENT_JAR_PATH > /opt/aiedumate/client.log 2>&1 &
+
+            echo "aiedumate-client started."
+            echo "Deployment finished successfully!"

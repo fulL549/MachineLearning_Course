@@ -1,0 +1,29 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../lab10_1.srcs/sources_1/ip/u2r_cmd_fifo/sim/u2r_cmd_fifo.v" \
+"../../../../lab10_1.srcs/sources_1/ip/r2u_data_fifo/sim/r2u_data_fifo.v" \
+"../../../../lab10_1.srcs/sources_1/ip/data_ram/sim/data_ram.v" \
+"../../../../lab10_1.srcs/sources_1/ip/inst_rom/sim/inst_rom.v" \
+"../../../../../MIPS_core/rtl/alu.v" \
+"../../../../../MIPS_core/rtl/aludec.v" \
+"../../../../lab10_1.srcs/sources_1/new/clk_div.v" \
+"../../../../../MIPS_core/rtl/controller.v" \
+"../../../../../MIPS_core/rtl/datapath.v" \
+"../../../../../uart_monitor/debug_core.v" \
+"../../../../../MIPS_core/rtl/maindec.v" \
+"../../../../../MIPS_core/rtl/mips.v" \
+"../../../../../MIPS_core/rtl/regfile.v" \
+"../../../../../MIPS_core/rtl/signext.v" \
+"../../../../../MIPS_core/rtl/sl2.v" \
+"../../../../../uart_monitor/sys_monitor.v" \
+"../../../../../MIPS_core/rtl/top.v" \
+"../../../../../uart_monitor/uart_rx.v" \
+"../../../../../uart_monitor/uart_top.v" \
+"../../../../../uart_monitor/uart_tx.v" \
+"../../../../../proc_top.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

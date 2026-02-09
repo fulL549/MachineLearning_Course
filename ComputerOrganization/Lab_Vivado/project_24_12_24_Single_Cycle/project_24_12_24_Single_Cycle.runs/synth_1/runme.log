@@ -1,0 +1,418 @@
+
+*** Running vivado
+    with args -log proc_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source proc_top.tcl
+
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source proc_top.tcl -notrace
+Command: synth_design -top proc_top -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 38696
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1113.277 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'proc_top' [C:/Users/Lin Hongyu/Desktop/lab10_code_template/proc_top.v:23]
+	Parameter n bound to: 6'b110010 
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/Lin Hongyu/Desktop/lab10_code_template/MIPS_core/rtl/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mips' [C:/Users/Lin Hongyu/Desktop/lab10_code_template/MIPS_core/rtl/mips.v:23]
+INFO: [Synth 8-6157] synthesizing module 'controller' [C:/Users/Lin Hongyu/Desktop/lab10_code_template/MIPS_core/rtl/controller.v:23]
+INFO: [Synth 8-6157] synthesizing module 'maindec' [C:/Users/Lin Hongyu/Desktop/lab10_code_template/MIPS_core/rtl/maindec.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'maindec' (1#1) [C:/Users/Lin Hongyu/Desktop/lab10_code_template/MIPS_core/rtl/maindec.v:23]
+INFO: [Synth 8-6157] synthesizing module 'aludec' [C:/Users/Lin Hongyu/Desktop/lab10_code_template/MIPS_core/rtl/aludec.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'aludec' (2#1) [C:/Users/Lin Hongyu/Desktop/lab10_code_template/MIPS_core/rtl/aludec.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'controller' (3#1) [C:/Users/Lin Hongyu/Desktop/lab10_code_template/MIPS_core/rtl/controller.v:23]
+INFO: [Synth 8-6157] synthesizing module 'datapath' [C:/Users/Lin Hongyu/Desktop/lab10_code_template/MIPS_core/rtl/datapath.v:23]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [C:/Users/Lin Hongyu/Desktop/lab10_code_template/MIPS_core/rtl/regfile.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (4#1) [C:/Users/Lin Hongyu/Desktop/lab10_code_template/MIPS_core/rtl/regfile.v:24]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/Lin Hongyu/Desktop/lab10_code_template/MIPS_core/rtl/alu.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (5#1) [C:/Users/Lin Hongyu/Desktop/lab10_code_template/MIPS_core/rtl/alu.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'datapath' (6#1) [C:/Users/Lin Hongyu/Desktop/lab10_code_template/MIPS_core/rtl/datapath.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mips' (7#1) [C:/Users/Lin Hongyu/Desktop/lab10_code_template/MIPS_core/rtl/mips.v:23]
+INFO: [Synth 8-6157] synthesizing module 'inst_rom' [C:/Users/Lin Hongyu/Desktop/lab10_code_template/MIPS_core/rtl/inst_rom.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'inst_rom' (8#1) [C:/Users/Lin Hongyu/Desktop/lab10_code_template/MIPS_core/rtl/inst_rom.v:23]
+INFO: [Synth 8-6157] synthesizing module 'datadata' [C:/Users/Lin Hongyu/Desktop/fulL vivado/project_24_12_24_Single_Cycle/project_24_12_24_Single_Cycle.runs/synth_1/.Xil/Vivado-39388-LAPTOP-RDA9S5SE/realtime/datadata_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'datadata' (9#1) [C:/Users/Lin Hongyu/Desktop/fulL vivado/project_24_12_24_Single_Cycle/project_24_12_24_Single_Cycle.runs/synth_1/.Xil/Vivado-39388-LAPTOP-RDA9S5SE/realtime/datadata_stub.v:6]
+WARNING: [Synth 8-689] width (15) of port connection 'addra' does not match port width (5) of module 'datadata' [C:/Users/Lin Hongyu/Desktop/lab10_code_template/MIPS_core/rtl/top.v:88]
+INFO: [Synth 8-6155] done synthesizing module 'top' (10#1) [C:/Users/Lin Hongyu/Desktop/lab10_code_template/MIPS_core/rtl/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'sys_monitor' [C:/Users/Lin Hongyu/Desktop/lab10_code_template/uart_monitor/sys_monitor.v:24]
+	Parameter monitor_len bound to: 11 - type: integer 
+	Parameter RX_byte bound to: 1 - type: integer 
+	Parameter TX_byte bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'debug_core' [C:/Users/Lin Hongyu/Desktop/lab10_code_template/uart_monitor/debug_core.v:24]
+	Parameter s_idle bound to: 9'b000000001 
+	Parameter s_bp bound to: 9'b000000010 
+	Parameter s_reg_wr bound to: 9'b000000100 
+	Parameter s_reg_wdata bound to: 9'b000001000 
+	Parameter s_uart_reg_wdata bound to: 9'b000010000 
+	Parameter s_reg_rdall bound to: 9'b000100000 
+	Parameter s_mem_addr bound to: 9'b001000000 
+	Parameter s_mem_wdata bound to: 9'b010000000 
+	Parameter s_fin bound to: 9'b100000000 
+INFO: [Synth 8-6155] done synthesizing module 'debug_core' (11#1) [C:/Users/Lin Hongyu/Desktop/lab10_code_template/uart_monitor/debug_core.v:24]
+INFO: [Synth 8-6157] synthesizing module 'r2u_data_fifo' [C:/Users/Lin Hongyu/Desktop/fulL vivado/project_24_12_24_Single_Cycle/project_24_12_24_Single_Cycle.runs/synth_1/.Xil/Vivado-39388-LAPTOP-RDA9S5SE/realtime/r2u_data_fifo_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'r2u_data_fifo' (12#1) [C:/Users/Lin Hongyu/Desktop/fulL vivado/project_24_12_24_Single_Cycle/project_24_12_24_Single_Cycle.runs/synth_1/.Xil/Vivado-39388-LAPTOP-RDA9S5SE/realtime/r2u_data_fifo_stub.v:6]
+WARNING: [Synth 8-7071] port 'wr_rst_busy' of module 'r2u_data_fifo' is unconnected for instance 'u_run_2_uart_clock' [C:/Users/Lin Hongyu/Desktop/lab10_code_template/uart_monitor/sys_monitor.v:189]
+WARNING: [Synth 8-7071] port 'rd_rst_busy' of module 'r2u_data_fifo' is unconnected for instance 'u_run_2_uart_clock' [C:/Users/Lin Hongyu/Desktop/lab10_code_template/uart_monitor/sys_monitor.v:189]
+WARNING: [Synth 8-7023] instance 'u_run_2_uart_clock' of module 'r2u_data_fifo' has 11 connections declared, but only 9 given [C:/Users/Lin Hongyu/Desktop/lab10_code_template/uart_monitor/sys_monitor.v:189]
+INFO: [Synth 8-6157] synthesizing module 'u2r_cmd_fifo' [C:/Users/Lin Hongyu/Desktop/fulL vivado/project_24_12_24_Single_Cycle/project_24_12_24_Single_Cycle.runs/synth_1/.Xil/Vivado-39388-LAPTOP-RDA9S5SE/realtime/u2r_cmd_fifo_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'u2r_cmd_fifo' (13#1) [C:/Users/Lin Hongyu/Desktop/fulL vivado/project_24_12_24_Single_Cycle/project_24_12_24_Single_Cycle.runs/synth_1/.Xil/Vivado-39388-LAPTOP-RDA9S5SE/realtime/u2r_cmd_fifo_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'uart_top' [C:/Users/Lin Hongyu/Desktop/lab10_code_template/uart_monitor/uart_top.v:13]
+	Parameter baudrate bound to: 115200 - type: integer 
+	Parameter tx_bytelen bound to: 4 - type: integer 
+	Parameter rx_bytelen bound to: 1 - type: integer 
+	Parameter baud_div bound to: 434 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [C:/Users/Lin Hongyu/Desktop/lab10_code_template/uart_monitor/uart_rx.v:13]
+	Parameter IDLE bound to: 3'b000 
+	Parameter START_BIT bound to: 3'b001 
+	Parameter DATA bound to: 3'b010 
+	Parameter SAVE_DATA bound to: 3'b011 
+	Parameter PARITY bound to: 3'b100 
+	Parameter STOP_BIT bound to: 3'b101 
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (14#1) [C:/Users/Lin Hongyu/Desktop/lab10_code_template/uart_monitor/uart_rx.v:13]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [C:/Users/Lin Hongyu/Desktop/lab10_code_template/uart_monitor/uart_tx.v:1]
+	Parameter IDLE bound to: 3'b000 
+	Parameter START_BIT bound to: 3'b001 
+	Parameter DATA bound to: 3'b010 
+	Parameter PARITY bound to: 3'b011 
+	Parameter STOP_BIT_FIRST bound to: 3'b100 
+	Parameter STOP_BIT_LAST bound to: 3'b101 
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (15#1) [C:/Users/Lin Hongyu/Desktop/lab10_code_template/uart_monitor/uart_tx.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'uart_top' (16#1) [C:/Users/Lin Hongyu/Desktop/lab10_code_template/uart_monitor/uart_top.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'sys_monitor' (17#1) [C:/Users/Lin Hongyu/Desktop/lab10_code_template/uart_monitor/sys_monitor.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'proc_top' (18#1) [C:/Users/Lin Hongyu/Desktop/lab10_code_template/proc_top.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1139.098 ; gain = 25.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1139.098 ; gain = 25.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1139.098 ; gain = 25.820
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1139.098 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Lin Hongyu/Desktop/fulL vivado/project_24_12_24_Single_Cycle/project_24_12_24_Single_Cycle.srcs/sources_1/ip/datadata/datadata/datadata_in_context.xdc] for cell 'u_top/u_data_ram'
+Finished Parsing XDC File [c:/Users/Lin Hongyu/Desktop/fulL vivado/project_24_12_24_Single_Cycle/project_24_12_24_Single_Cycle.srcs/sources_1/ip/datadata/datadata/datadata_in_context.xdc] for cell 'u_top/u_data_ram'
+Parsing XDC File [c:/Users/Lin Hongyu/Desktop/fulL vivado/project_24_12_24_Single_Cycle/project_24_12_24_Single_Cycle.srcs/sources_1/ip/r2u_data_fifo/r2u_data_fifo/r2u_data_fifo_in_context.xdc] for cell 'u_sys_monitor/u_run_2_uart_clock'
+Finished Parsing XDC File [c:/Users/Lin Hongyu/Desktop/fulL vivado/project_24_12_24_Single_Cycle/project_24_12_24_Single_Cycle.srcs/sources_1/ip/r2u_data_fifo/r2u_data_fifo/r2u_data_fifo_in_context.xdc] for cell 'u_sys_monitor/u_run_2_uart_clock'
+Parsing XDC File [c:/Users/Lin Hongyu/Desktop/fulL vivado/project_24_12_24_Single_Cycle/project_24_12_24_Single_Cycle.srcs/sources_1/ip/u2r_cmd_fifo/u2r_cmd_fifo/u2r_cmd_fifo_in_context.xdc] for cell 'u_sys_monitor/u_u2r_cmd_convert'
+Finished Parsing XDC File [c:/Users/Lin Hongyu/Desktop/fulL vivado/project_24_12_24_Single_Cycle/project_24_12_24_Single_Cycle.srcs/sources_1/ip/u2r_cmd_fifo/u2r_cmd_fifo/u2r_cmd_fifo_in_context.xdc] for cell 'u_sys_monitor/u_u2r_cmd_convert'
+Parsing XDC File [C:/Users/Lin Hongyu/Desktop/fulL vivado/project_24_12_24_Single_Cycle/project_24_12_24_Single_Cycle.srcs/constrs_1/new/testtest.xdc]
+Finished Parsing XDC File [C:/Users/Lin Hongyu/Desktop/fulL vivado/project_24_12_24_Single_Cycle/project_24_12_24_Single_Cycle.srcs/constrs_1/new/testtest.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Lin Hongyu/Desktop/fulL vivado/project_24_12_24_Single_Cycle/project_24_12_24_Single_Cycle.srcs/constrs_1/new/testtest.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/proc_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/proc_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/Lin Hongyu/Desktop/fulL vivado/project_24_12_24_Single_Cycle/project_24_12_24_Single_Cycle.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Lin Hongyu/Desktop/fulL vivado/project_24_12_24_Single_Cycle/project_24_12_24_Single_Cycle.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1250.551 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1250.551 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1250.551 ; gain = 137.273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1250.551 ; gain = 137.273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for u_top/u_data_ram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_sys_monitor/u_run_2_uart_clock. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_sys_monitor/u_u2r_cmd_convert. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1250.551 ; gain = 137.273
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'CS_reg' in module 'uart_rx'
+INFO: [Synth 8-802] inferred FSM for state register 'CS_reg' in module 'uart_tx'
+WARNING: [Synth 8-327] inferring latch for variable 'memtoreg1_reg' [C:/Users/Lin Hongyu/Desktop/lab10_code_template/MIPS_core/rtl/maindec.v:39]
+WARNING: [Synth 8-327] inferring latch for variable 'memwrite1_reg' [C:/Users/Lin Hongyu/Desktop/lab10_code_template/MIPS_core/rtl/maindec.v:39]
+WARNING: [Synth 8-327] inferring latch for variable 'branch1_reg' [C:/Users/Lin Hongyu/Desktop/lab10_code_template/MIPS_core/rtl/maindec.v:39]
+WARNING: [Synth 8-327] inferring latch for variable 'alusrc1_reg' [C:/Users/Lin Hongyu/Desktop/lab10_code_template/MIPS_core/rtl/maindec.v:39]
+WARNING: [Synth 8-327] inferring latch for variable 'regdst1_reg' [C:/Users/Lin Hongyu/Desktop/lab10_code_template/MIPS_core/rtl/maindec.v:39]
+WARNING: [Synth 8-327] inferring latch for variable 'regwrite1_reg' [C:/Users/Lin Hongyu/Desktop/lab10_code_template/MIPS_core/rtl/maindec.v:39]
+WARNING: [Synth 8-327] inferring latch for variable 'jump1_reg' [C:/Users/Lin Hongyu/Desktop/lab10_code_template/MIPS_core/rtl/maindec.v:39]
+WARNING: [Synth 8-327] inferring latch for variable 'aluop1_reg' [C:/Users/Lin Hongyu/Desktop/lab10_code_template/MIPS_core/rtl/maindec.v:40]
+WARNING: [Synth 8-327] inferring latch for variable 'alucontrol_o_reg' [C:/Users/Lin Hongyu/Desktop/lab10_code_template/MIPS_core/rtl/aludec.v:31]
+WARNING: [Synth 8-327] inferring latch for variable 'pc2_reg' [C:/Users/Lin Hongyu/Desktop/lab10_code_template/MIPS_core/rtl/datapath.v:165]
+WARNING: [Synth 8-327] inferring latch for variable 'pc1_reg' [C:/Users/Lin Hongyu/Desktop/lab10_code_template/MIPS_core/rtl/datapath.v:154]
+WARNING: [Synth 8-327] inferring latch for variable 'pcreg_reg' [C:/Users/Lin Hongyu/Desktop/lab10_code_template/MIPS_core/rtl/datapath.v:128]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                              000
+               START_BIT |                              001 |                              001
+                    DATA |                              010 |                              010
+               SAVE_DATA |                              011 |                              011
+                  PARITY |                              100 |                              100
+                STOP_BIT |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'CS_reg' using encoding 'sequential' in module 'uart_rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                              000
+               START_BIT |                              001 |                              001
+                    DATA |                              010 |                              010
+                  PARITY |                              011 |                              011
+          STOP_BIT_FIRST |                              100 |                              100
+           STOP_BIT_LAST |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'CS_reg' using encoding 'sequential' in module 'uart_tx'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1250.551 ; gain = 137.273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 2     
+	   2 Input   16 Bit       Adders := 2     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 4     
+	   2 Input    1 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 5     
+	               16 Bit    Registers := 2     
+	               15 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                3 Bit    Registers := 5     
+	                1 Bit    Registers := 20    
++---Muxes : 
+	   4 Input   64 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 14    
+	   4 Input   32 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 5     
+	   2 Input   15 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 5     
+	   5 Input    9 Bit        Muxes := 1     
+	   3 Input    9 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 1     
+	   6 Input    8 Bit        Muxes := 1     
+	   5 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 4     
+	   3 Input    5 Bit        Muxes := 1     
+	   8 Input    3 Bit        Muxes := 1     
+	  10 Input    3 Bit        Muxes := 3     
+	   5 Input    3 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 3     
+	   9 Input    3 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 2     
+	  32 Input    2 Bit        Muxes := 8     
+	   2 Input    1 Bit        Muxes := 22    
+	   3 Input    1 Bit        Muxes := 13    
+	   4 Input    1 Bit        Muxes := 15    
+	  10 Input    1 Bit        Muxes := 7     
+	   6 Input    1 Bit        Muxes := 18    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1250.551 ; gain = 137.273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++------------+------------------------------------------+-----------+----------------------+--------------+
+|Module Name | RTL Object                               | Inference | Size (Depth x Width) | Primitives   | 
++------------+------------------------------------------+-----------+----------------------+--------------+
+|proc_top    | u_top/u_mips/u_datapath/u_regfile/rf_reg | Implied   | 32 x 32              | RAM32M x 18	 | 
++------------+------------------------------------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 1250.551 ; gain = 137.273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 1250.551 ; gain = 137.273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping	Report
++------------+------------------------------------------+-----------+----------------------+--------------+
+|Module Name | RTL Object                               | Inference | Size (Depth x Width) | Primitives   | 
++------------+------------------------------------------+-----------+----------------------+--------------+
+|proc_top    | u_top/u_mips/u_datapath/u_regfile/rf_reg | Implied   | 32 x 32              | RAM32M x 18	 | 
++------------+------------------------------------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 1293.375 ; gain = 180.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 1299.711 ; gain = 186.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 1299.711 ; gain = 186.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 1299.711 ; gain = 186.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 1299.711 ; gain = 186.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 1299.711 ; gain = 186.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 1299.711 ; gain = 186.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |r2u_data_fifo |         1|
+|2     |u2r_cmd_fifo  |         1|
+|3     |datadata      |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |datadata      |     1|
+|2     |r2u_data_fifo |     1|
+|3     |u2r_cmd_fifo  |     1|
+|4     |BUFG          |     4|
+|5     |CARRY4        |    35|
+|6     |LUT1          |     6|
+|7     |LUT2          |   114|
+|8     |LUT3          |    99|
+|9     |LUT4          |    64|
+|10    |LUT5          |   131|
+|11    |LUT6          |   435|
+|12    |MUXF7         |    30|
+|13    |RAM32M        |    18|
+|14    |FDCE          |   330|
+|15    |FDPE          |    20|
+|16    |LDC           |   100|
+|17    |LDCP          |     3|
+|18    |LDP           |     2|
+|19    |IBUF          |     3|
+|20    |OBUF          |     1|
++------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 1299.711 ; gain = 186.434
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 12 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:20 . Memory (MB): peak = 1299.711 ; gain = 74.980
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 1299.711 ; gain = 186.434
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1311.766 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 188 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1311.766 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 123 instances were transformed.
+  LDC => LDCE: 100 instances
+  LDCP => LDCP (GND, LDCE, LUT3(x2), VCC): 3 instances
+  LDP => LDPE: 2 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 18 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+55 Infos, 16 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 1311.766 ; gain = 198.488
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Lin Hongyu/Desktop/fulL vivado/project_24_12_24_Single_Cycle/project_24_12_24_Single_Cycle.runs/synth_1/proc_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file proc_top_utilization_synth.rpt -pb proc_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Jan 12 13:59:02 2025...

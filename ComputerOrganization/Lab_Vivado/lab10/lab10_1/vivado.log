@@ -1,0 +1,196 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun Jan 12 17:55:36 2025
+# Process ID: 22092
+# Current directory: C:/Users/Lin Hongyu/Desktop/lab10/lab10_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24176 C:\Users\Lin Hongyu\Desktop\lab10\lab10_1\lab10_1.xpr
+# Log file: C:/Users/Lin Hongyu/Desktop/lab10/lab10_1/vivado.log
+# Journal file: C:/Users/Lin Hongyu/Desktop/lab10/lab10_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Lin Hongyu/Desktop/lab10/lab10_1/lab10_1.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1113.242 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_simulation -mode post-synthesis -type functional
+Command: launch_simulation -mode post-synthesis -type functional
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching post-synthesis functional simulation in 'C:/Users/Lin Hongyu/Desktop/lab10/lab10_1/lab10_1.sim/sim_1/synth/func/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z010clg400-1
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1414.035 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 53 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+open_run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1427.078 ; gain = 229.816
+INFO: [Common 17-344] 'open_run' was cancelled
+INFO: [Vivado 12-5357] 'setup' step aborted
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1427.078 ; gain = 229.816
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Lin Hongyu/Desktop/lab10/lab10_1/lab10_1.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado/2020.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/Lin Hongyu/Desktop/lab10/lab10_1/lab10_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Lin Hongyu/Desktop/lab10/lab10_1/lab10_1.sim/sim_1/behav/xsim/inst_rom.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/Lin Hongyu/Desktop/lab10/lab10_1/lab10_1.sim/sim_1/behav/xsim/com_d.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/Lin Hongyu/Desktop/lab10/lab10_1/lab10_1.sim/sim_1/behav/xsim/mipstest.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/Lin Hongyu/Desktop/lab10/lab10_1/lab10_1.sim/sim_1/behav/xsim/loop.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/Lin Hongyu/Desktop/lab10/lab10_1/lab10_1.sim/sim_1/behav/xsim/com.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/Lin Hongyu/Desktop/lab10/lab10_1/lab10_1.sim/sim_1/behav/xsim/com_b.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/Lin Hongyu/Desktop/lab10/lab10_1/lab10_1.sim/sim_1/behav/xsim/com_c.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Lin Hongyu/Desktop/lab10/lab10_1/lab10_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Lin Hongyu/Desktop/lab10/lab10_1/lab10_1.sim/sim_1/behav/xsim'
+"xelab -wto 3bbbeaa292504a919009744457f5cdb5 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 3bbbeaa292504a919009744457f5cdb5 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 14 differs from formal bit length 15 for port 'mem_debug_addr_i' [C:/Users/Lin Hongyu/Desktop/lab10/MIPS_core/sim/testbench.v:58]
+WARNING: [VRFC 10-3091] actual bit length 14 differs from formal bit length 8 for port 'addra' [C:/Users/Lin Hongyu/Desktop/lab10/MIPS_core/rtl/top.v:94]
+WARNING: [VRFC 10-5021] port 'reg_wdata_dbg' is not connected on this instance [C:/Users/Lin Hongyu/Desktop/lab10/MIPS_core/sim/testbench.v:45]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.maindec
+Compiling module xil_defaultlib.aludec
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.signext
+Compiling module xil_defaultlib.sl2
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.mips
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="zyn...
+Compiling module xil_defaultlib.inst_rom
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="zyn...
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
+
+****** Webtalk v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Lin -notrace
+invalid command name "[4AD4:15C0][2023-09-08T17:39:58]i001:"
+    while executing
+"[4AD4:15C0][2023-09-08T17:39:58]i001: Burn v3.10.4.4718, Windows v10.0 (Build 22621: Service Pack 0), path: C:\Windows\Temp\{93F8E8CC-BAD0-4C9B-B9FE-2..."
+    (file "C:/Users/Lin" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Sun Jan 12 18:07:27 2025...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1573.699 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Lin Hongyu/Desktop/lab10/lab10_1/lab10_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -view {{C:/Users/Lin Hongyu/Desktop/lab10/lab10_1/testbench_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config {C:/Users/Lin Hongyu/Desktop/lab10/lab10_1/testbench_behav.wcfg}
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module testbench.dut.u_inst_rom.inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module testbench.dut.u_data_ram.inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 1573.699 ; gain = 14.102
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Lin Hongyu/Desktop/lab10/lab10_1/lab10_1.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado/2020.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/Lin Hongyu/Desktop/lab10/lab10_1/lab10_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Lin Hongyu/Desktop/lab10/lab10_1/lab10_1.sim/sim_1/behav/xsim/inst_rom.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/Lin Hongyu/Desktop/lab10/lab10_1/lab10_1.sim/sim_1/behav/xsim/com_d.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/Lin Hongyu/Desktop/lab10/lab10_1/lab10_1.sim/sim_1/behav/xsim/mipstest.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/Lin Hongyu/Desktop/lab10/lab10_1/lab10_1.sim/sim_1/behav/xsim/loop.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/Lin Hongyu/Desktop/lab10/lab10_1/lab10_1.sim/sim_1/behav/xsim/com.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/Lin Hongyu/Desktop/lab10/lab10_1/lab10_1.sim/sim_1/behav/xsim/com_b.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/Lin Hongyu/Desktop/lab10/lab10_1/lab10_1.sim/sim_1/behav/xsim/com_c.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Lin Hongyu/Desktop/lab10/lab10_1/lab10_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Lin Hongyu/Desktop/lab10/lab10_1/lab10_1.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Lin Hongyu/Desktop/lab10/lab10_1/lab10_1.sim/sim_1/behav/xsim'
+"xelab -wto 3bbbeaa292504a919009744457f5cdb5 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 3bbbeaa292504a919009744457f5cdb5 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 14 differs from formal bit length 15 for port 'mem_debug_addr_i' [C:/Users/Lin Hongyu/Desktop/lab10/MIPS_core/sim/testbench.v:58]
+WARNING: [VRFC 10-3091] actual bit length 14 differs from formal bit length 8 for port 'addra' [C:/Users/Lin Hongyu/Desktop/lab10/MIPS_core/rtl/top.v:94]
+WARNING: [VRFC 10-5021] port 'reg_wdata_dbg' is not connected on this instance [C:/Users/Lin Hongyu/Desktop/lab10/MIPS_core/sim/testbench.v:45]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module testbench.dut.u_inst_rom.inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module testbench.dut.u_data_ram.inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1621.098 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Jan 12 19:12:15 2025...

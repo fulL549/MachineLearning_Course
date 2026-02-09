@@ -1,0 +1,46 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Nov 19 21:28:26 2024
+# Process ID: 96232
+# Current directory: C:/Users/Lin Hongyu/Desktop/fulL vivado/Project_24_11_5 UART串口/project_3.runs/synth_1
+# Command line: vivado.exe -log uart_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source uart_top.tcl
+# Log file: C:/Users/Lin Hongyu/Desktop/fulL vivado/Project_24_11_5 UART串口/project_3.runs/synth_1/uart_top.vds
+# Journal file: C:/Users/Lin Hongyu/Desktop/fulL vivado/Project_24_11_5 UART串口/project_3.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source uart_top.tcl -notrace
+Command: synth_design -top uart_top -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 94080
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1109.746 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'uart_top' [C:/Users/Lin Hongyu/Desktop/fulL vivado/Project_24_11_5 UART串口/uart串口代码/uart_top.v:1]
+	Parameter baudrate bound to: 115200 - type: integer 
+	Parameter baud_div bound to: 434 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [C:/Users/Lin Hongyu/Desktop/fulL vivado/Project_24_11_5 UART串口/uart串口代码/uart_rx.v:1]
+	Parameter IDLE bound to: 3'b000 
+	Parameter START_BIT bound to: 3'b001 
+	Parameter DATA bound to: 3'b010 
+	Parameter SAVE_DATA bound to: 3'b011 
+	Parameter PARITY bound to: 3'b100 
+	Parameter STOP_BIT bound to: 3'b101 
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (1#1) [C:/Users/Lin Hongyu/Desktop/fulL vivado/Project_24_11_5 UART串口/uart串口代码/uart_rx.v:1]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [C:/Users/Lin Hongyu/Desktop/fulL vivado/Project_24_11_5 UART串口/uart串口代码/uart_tx.v:1]
+	Parameter IDLE bound to: 3'b000 
+	Parameter START_BIT bound to: 3'b001 
+	Parameter DATA bound to: 3'b010 
+	Parameter PARITY bound to: 3'b011 
+	Parameter STOP_BIT_FIRST bound to: 3'b100 
+	Parameter STOP_BIT_LAST bound to: 3'b101 
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (2#1) [C:/Users/Lin Hongyu/Desktop/fulL vivado/Project_24_11_5 UART串口/uart串口代码/uart_tx.v:1]
+INFO: [Synth 8-6157] synthesizing module 'fifo_8b' [C:/Users/Lin Hongyu/Desktop/fulL vivado/Project_24_11_5 UART串口/project_3.runs/synth_1/.Xil/Vivado-96232-LAPTOP-RDA9S5SE/realtime/fifo_8b_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_8b' (3#1) [C:/Users/Lin Hongyu/Desktop/fulL vivado/Project_24_11_5 UART串口/project_3.runs/synth_1/.Xil/Vivado-96232-LAPTOP-RDA9S5SE/realtime/fifo_8b_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'din' does not match port width (8) of module 'fifo_8b' [C:/Users/Lin Hongyu/Desktop/fulL vivado/Project_24_11_5 UART串口/uart串口代码/uart_top.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'uart_top' (4#1) [C:/Users/Lin Hongyu/Desktop/fulL vivado/Project_24_11_5 UART串口/uart串口代码/uart_top.v:1]

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Nov 19 20:15:42 2024
+# Process ID: 85260
+# Current directory: C:/Users/Lin Hongyu/Desktop/fulL vivado/project_4/project_4.runs/fifo_32b_2_8b_synth_1
+# Command line: vivado.exe -log fifo_32b_2_8b.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fifo_32b_2_8b.tcl
+# Log file: C:/Users/Lin Hongyu/Desktop/fulL vivado/project_4/project_4.runs/fifo_32b_2_8b_synth_1/fifo_32b_2_8b.vds
+# Journal file: C:/Users/Lin Hongyu/Desktop/fulL vivado/project_4/project_4.runs/fifo_32b_2_8b_synth_1\vivado.jou
+#-----------------------------------------------------------
+source fifo_32b_2_8b.tcl -notrace

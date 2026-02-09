@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lin Hongyu/Desktop/fulL vivado/Project_24_11_3 相邻点累加/Project_24_11_3 相邻点累加.srcs/sources_1/new/sigma_16p.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sigma_16p
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lin Hongyu/Desktop/fulL vivado/Project_24_11_3 相邻点累加/Project_24_11_3 相邻点累加.srcs/sim_1/new/sigma_16p_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sigma_16p_tb

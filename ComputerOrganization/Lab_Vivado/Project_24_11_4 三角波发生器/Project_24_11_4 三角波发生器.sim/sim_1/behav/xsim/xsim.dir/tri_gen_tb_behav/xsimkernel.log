@@ -1,0 +1,7 @@
+Running: xsim.dir/tri_gen_tb_behav/xsimk.exe -simmode gui -wdb tri_gen_tb_behav.wdb -simrunnum 0 -socket 57491
+Design successfully loaded
+Design Loading Memory Usage: 6928 KB (Peak: 6928 KB)
+Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 7660 KB (Peak: 7660 KB)
+Simulation CPU Usage: 0 ms

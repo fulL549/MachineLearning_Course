@@ -1,0 +1,27 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+C:/Users/Lin Hongyu/Desktop/fulL vivado/project_24_12_24_Single_Cycle/project_24_12_24_Single_Cycle.sim/sim_1/behav/xsim/glbl.v,1590624368,verilog,,,,glbl,,,,,,,,
+C:/Users/Lin Hongyu/Desktop/fulL vivado/project_24_12_24_Single_Cycle/project_24_12_24_Single_Cycle.srcs/sim_1/imports/sim/testbench.v,1735465380,verilog,,,,testbench,,,,,,,,
+C:/Users/Lin Hongyu/Desktop/fulL vivado/project_24_12_24_Single_Cycle/project_24_12_24_Single_Cycle.srcs/sources_1/imports/lab10_code_template/MIPS_core/rtl/alu.v,1735714958,verilog,,C:/Users/Lin Hongyu/Desktop/fulL vivado/project_24_12_24_Single_Cycle/project_24_12_24_Single_Cycle.srcs/sources_1/imports/lab10_code_template/MIPS_core/rtl/aludec.v,,alu,,,,,,,,
+C:/Users/Lin Hongyu/Desktop/fulL vivado/project_24_12_24_Single_Cycle/project_24_12_24_Single_Cycle.srcs/sources_1/imports/lab10_code_template/MIPS_core/rtl/aludec.v,1735446468,verilog,,C:/Users/Lin Hongyu/Desktop/fulL vivado/project_24_12_24_Single_Cycle/project_24_12_24_Single_Cycle.srcs/sources_1/imports/lab10_code_template/MIPS_core/rtl/controller.v,,aludec,,,,,,,,
+C:/Users/Lin Hongyu/Desktop/fulL vivado/project_24_12_24_Single_Cycle/project_24_12_24_Single_Cycle.srcs/sources_1/imports/lab10_code_template/MIPS_core/rtl/controller.v,1735446468,verilog,,C:/Users/Lin Hongyu/Desktop/fulL vivado/project_24_12_24_Single_Cycle/project_24_12_24_Single_Cycle.srcs/sources_1/imports/lab10_code_template/MIPS_core/rtl/datapath.v,,controller,,,,,,,,
+C:/Users/Lin Hongyu/Desktop/fulL vivado/project_24_12_24_Single_Cycle/project_24_12_24_Single_Cycle.srcs/sources_1/imports/lab10_code_template/MIPS_core/rtl/datapath.v,1735457892,verilog,,C:/Users/Lin Hongyu/Desktop/fulL vivado/project_24_12_24_Single_Cycle/project_24_12_24_Single_Cycle.srcs/sources_1/imports/lab10_code_template/MIPS_core/rtl/inst_rom.v,,datapath,,,,,,,,
+C:/Users/Lin Hongyu/Desktop/fulL vivado/project_24_12_24_Single_Cycle/project_24_12_24_Single_Cycle.srcs/sources_1/imports/lab10_code_template/MIPS_core/rtl/inst_rom.v,1735465238,verilog,,C:/Users/Lin Hongyu/Desktop/fulL vivado/project_24_12_24_Single_Cycle/project_24_12_24_Single_Cycle.srcs/sources_1/imports/lab10_code_template/MIPS_core/rtl/maindec.v,,inst_rom,,,,,,,,
+C:/Users/Lin Hongyu/Desktop/fulL vivado/project_24_12_24_Single_Cycle/project_24_12_24_Single_Cycle.srcs/sources_1/imports/lab10_code_template/MIPS_core/rtl/maindec.v,1735446468,verilog,,C:/Users/Lin Hongyu/Desktop/fulL vivado/project_24_12_24_Single_Cycle/project_24_12_24_Single_Cycle.srcs/sources_1/imports/lab10_code_template/MIPS_core/rtl/mips.v,,maindec,,,,,,,,
+C:/Users/Lin Hongyu/Desktop/fulL vivado/project_24_12_24_Single_Cycle/project_24_12_24_Single_Cycle.srcs/sources_1/imports/lab10_code_template/MIPS_core/rtl/mips.v,1735459234,verilog,,C:/Users/Lin Hongyu/Desktop/fulL vivado/project_24_12_24_Single_Cycle/project_24_12_24_Single_Cycle.srcs/sources_1/imports/lab10_code_template/MIPS_core/rtl/regfile.v,,mips,,,,,,,,
+C:/Users/Lin Hongyu/Desktop/fulL vivado/project_24_12_24_Single_Cycle/project_24_12_24_Single_Cycle.srcs/sources_1/imports/lab10_code_template/MIPS_core/rtl/regfile.v,1735454924,verilog,,C:/Users/Lin Hongyu/Desktop/fulL vivado/project_24_12_24_Single_Cycle/project_24_12_24_Single_Cycle.srcs/sources_1/imports/lab10_code_template/MIPS_core/rtl/top.v,,regfile,,,,,,,,
+C:/Users/Lin Hongyu/Desktop/fulL vivado/project_24_12_24_Single_Cycle/project_24_12_24_Single_Cycle.srcs/sources_1/imports/lab10_code_template/MIPS_core/rtl/top.v,1736657469,verilog,,C:/Users/Lin Hongyu/Desktop/fulL vivado/project_24_12_24_Single_Cycle/project_24_12_24_Single_Cycle.srcs/sim_1/imports/sim/testbench.v,,top,,,,,,,,
+C:/Users/Lin Hongyu/Desktop/fulL vivado/project_24_12_24_Single_Cycle/project_24_12_24_Single_Cycle.srcs/sources_1/ip/datadata/sim/datadata.v,1735010869,verilog,,C:/Users/Lin Hongyu/Desktop/fulL vivado/project_24_12_24_Single_Cycle/project_24_12_24_Single_Cycle.srcs/sources_1/imports/lab10_code_template/MIPS_core/rtl/alu.v,,datadata,,,,,,,,
+D:/Singal_cycle/MIPS_core/rtl/adder.v,1733231185,verilog,,D:/Singal_cycle/MIPS_core/rtl/alu.v,,adder,,,,,,,,
+D:/Singal_cycle/MIPS_core/rtl/flopr.v,1735607039,verilog,,D:/Singal_cycle/MIPS_core/rtl/maindec.v,,flopr,,,,,,,,
+D:/Singal_cycle/MIPS_core/rtl/mux2.v,1733232100,verilog,,D:/Singal_cycle/MIPS_core/rtl/regfile.v,,mux2,,,,,,,,
+D:/Singal_cycle/MIPS_core/rtl/signext.v,1733231189,verilog,,D:/Singal_cycle/MIPS_core/rtl/sl2.v,,signext,,,,,,,,
+D:/Singal_cycle/MIPS_core/rtl/sl2.v,1733231168,verilog,,D:/Singal_cycle/MIPS_core/rtl/top.v,,sl2,,,,,,,,
+D:/Singal_cycle/debug_core.v,1733129102,verilog,,D:/Singal_cycle/MIPS_core/rtl/flopr.v,,debug_core,,,,,,,,
+D:/Singal_cycle/proc_top.v,1734494193,verilog,,,,proc_top,,,,,,,,
+D:/Singal_cycle/sys_monitor.v,1733129370,verilog,,D:/Singal_cycle/MIPS_core/rtl/top.v,,sys_monitor,,,,,,,,
+D:/Singal_cycle/uart_rx.v,1729492380,verilog,,D:/Singal_cycle/uart_top.v,,uart_rx,,,,,,,,
+D:/Singal_cycle/uart_top.v,1732461950,verilog,,D:/Singal_cycle/uart_tx.v,,uart_top,,,,,,,,
+D:/Singal_cycle/uart_tx.v,1729492388,verilog,,D:/Singal_cycle/proc_top.v,,uart_tx,,,,,,,,

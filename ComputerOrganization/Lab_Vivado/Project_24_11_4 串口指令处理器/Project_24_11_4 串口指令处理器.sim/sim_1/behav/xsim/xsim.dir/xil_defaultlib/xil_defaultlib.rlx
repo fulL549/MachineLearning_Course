@@ -1,0 +1,9 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+C:/Users/Lin Hongyu/Desktop/fulL vivado/Project_24_11_4 串口指令处理器/Project_24_11_4 串口指令处理器.sim/sim_1/behav/xsim/glbl.v,1590624368,verilog,,,,glbl,,,,,,,,
+C:/Users/Lin Hongyu/Desktop/fulL vivado/Project_24_11_4 串口指令处理器/Project_24_11_4 串口指令处理器.srcs/sim_1/new/UART_top.v,1730707525,verilog,,C:/Users/Lin Hongyu/Desktop/fulL vivado/Project_24_11_4 串口指令处理器/Project_24_11_4 串口指令处理器.srcs/sources_1/new/cmd_pro.v,,UART_top,,,,,,,,
+C:/Users/Lin Hongyu/Desktop/fulL vivado/Project_24_11_4 串口指令处理器/Project_24_11_4 串口指令处理器.srcs/sim_1/new/UART_top_tb.v,1730708116,verilog,,,,UART_top_tb,,,,,,,,
+C:/Users/Lin Hongyu/Desktop/fulL vivado/Project_24_11_4 串口指令处理器/Project_24_11_4 串口指令处理器.srcs/sources_1/new/UART_TXer.v,1730707166,verilog,,C:/Users/Lin Hongyu/Desktop/fulL vivado/Project_24_11_4 串口指令处理器/Project_24_11_4 串口指令处理器.srcs/sim_1/new/UART_top.v,,UART_TXer,,,,,,,,
+C:/Users/Lin Hongyu/Desktop/fulL vivado/Project_24_11_4 串口指令处理器/Project_24_11_4 串口指令处理器.srcs/sources_1/new/cmd_pro.v,1730707179,verilog,,C:/Users/Lin Hongyu/Desktop/fulL vivado/Project_24_11_4 串口指令处理器/Project_24_11_4 串口指令处理器.srcs/sim_1/new/UART_top_tb.v,,cmd_pro,,,,,,,,

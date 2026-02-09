@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lin Hongyu/Desktop/fulL vivado/Project_24_11_4 串口指令处理器/Project_24_11_4 串口指令处理器.srcs/sources_1/new/UART_TXer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_TXer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lin Hongyu/Desktop/fulL vivado/Project_24_11_4 串口指令处理器/Project_24_11_4 串口指令处理器.srcs/sim_1/new/UART_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lin Hongyu/Desktop/fulL vivado/Project_24_11_4 串口指令处理器/Project_24_11_4 串口指令处理器.srcs/sources_1/new/cmd_pro.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cmd_pro
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lin Hongyu/Desktop/fulL vivado/Project_24_11_4 串口指令处理器/Project_24_11_4 串口指令处理器.srcs/sim_1/new/UART_top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_top_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lin Hongyu/Desktop/fulL vivado/Project_24_11_4 串口指令处理器/Project_24_11_4 串口指令处理器.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

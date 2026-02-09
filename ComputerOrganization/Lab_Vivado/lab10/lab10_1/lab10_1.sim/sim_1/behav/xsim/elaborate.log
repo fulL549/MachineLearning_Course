@@ -1,0 +1,11 @@
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 3bbbeaa292504a919009744457f5cdb5 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 14 differs from formal bit length 15 for port 'mem_debug_addr_i' [C:/Users/Lin Hongyu/Desktop/lab10/MIPS_core/sim/testbench.v:58]
+WARNING: [VRFC 10-3091] actual bit length 14 differs from formal bit length 8 for port 'addra' [C:/Users/Lin Hongyu/Desktop/lab10/MIPS_core/rtl/top.v:94]
+WARNING: [VRFC 10-5021] port 'reg_wdata_dbg' is not connected on this instance [C:/Users/Lin Hongyu/Desktop/lab10/MIPS_core/sim/testbench.v:45]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

@@ -1,0 +1,19 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../project_24_12_24_Single_Cycle.srcs/sources_1/ip/datadata/sim/datadata.v" \
+"../../../../project_24_12_24_Single_Cycle.srcs/sources_1/imports/lab10_code_template/MIPS_core/rtl/alu.v" \
+"../../../../project_24_12_24_Single_Cycle.srcs/sources_1/imports/lab10_code_template/MIPS_core/rtl/aludec.v" \
+"../../../../project_24_12_24_Single_Cycle.srcs/sources_1/imports/lab10_code_template/MIPS_core/rtl/controller.v" \
+"../../../../project_24_12_24_Single_Cycle.srcs/sources_1/imports/lab10_code_template/MIPS_core/rtl/datapath.v" \
+"../../../../project_24_12_24_Single_Cycle.srcs/sources_1/imports/lab10_code_template/MIPS_core/rtl/inst_rom.v" \
+"../../../../project_24_12_24_Single_Cycle.srcs/sources_1/imports/lab10_code_template/MIPS_core/rtl/maindec.v" \
+"../../../../project_24_12_24_Single_Cycle.srcs/sources_1/imports/lab10_code_template/MIPS_core/rtl/mips.v" \
+"../../../../project_24_12_24_Single_Cycle.srcs/sources_1/imports/lab10_code_template/MIPS_core/rtl/regfile.v" \
+"../../../../project_24_12_24_Single_Cycle.srcs/sources_1/imports/lab10_code_template/MIPS_core/rtl/top.v" \
+"../../../../project_24_12_24_Single_Cycle.srcs/sim_1/imports/sim/testbench.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

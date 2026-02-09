@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lin Hongyu/Desktop/fulL vivado/project_3/project_3.srcs/sources_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fn_sw
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lin Hongyu/Desktop/fulL vivado/project_3/project_3.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fn_sw_tb

@@ -1,0 +1,32 @@
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 3193409c02df444b95378845f73ef4c4 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 11 for port 'monitor_list_o' [C:/Users/Lin Hongyu/Desktop/fulL vivado/project_24_12_24_Single_Cycle/project_24_12_24_Single_Cycle.srcs/sim_1/imports/sim/testbench.v:51]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 15 for port 'mem_debug_addr_i' [C:/Users/Lin Hongyu/Desktop/fulL vivado/project_24_12_24_Single_Cycle/project_24_12_24_Single_Cycle.srcs/sim_1/imports/sim/testbench.v:57]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'we_dbg_i' [C:/Users/Lin Hongyu/Desktop/fulL vivado/project_24_12_24_Single_Cycle/project_24_12_24_Single_Cycle.srcs/sources_1/imports/lab10_code_template/MIPS_core/rtl/datapath.v:82]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 5 for port 'addra' [C:/Users/Lin Hongyu/Desktop/fulL vivado/project_24_12_24_Single_Cycle/project_24_12_24_Single_Cycle.srcs/sources_1/imports/lab10_code_template/MIPS_core/rtl/top.v:88]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.maindec
+Compiling module xil_defaultlib.aludec
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.mips
+Compiling module xil_defaultlib.inst_rom
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="zyn...
+Compiling module xil_defaultlib.datadata
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav

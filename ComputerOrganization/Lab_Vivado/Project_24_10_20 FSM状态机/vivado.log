@@ -1,0 +1,93 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun Jan 12 15:02:50 2025
+# Process ID: 19752
+# Current directory: C:/Users/Lin Hongyu/Desktop/fulL vivado/Project_24_10_20 FSM×´Ì¬»ú
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent28816 C:\Users\Lin Hongyu\Desktop\fulL vivado\Project_24_10_20 FSM×´Ì¬»ú\project_11.xpr
+# Log file: C:/Users/Lin Hongyu/Desktop/fulL vivado/Project_24_10_20 FSM×´Ì¬»ú/vivado.log
+# Journal file: C:/Users/Lin Hongyu/Desktop/fulL vivado/Project_24_10_20 FSM×´Ì¬»ú\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Lin Hongyu/Desktop/fulL vivado/Project_24_10_20 FSM×´Ì¬»ú/project_11.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/Lin Hongyu/Desktop/fulL vivado/project_11' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2020.1/data/ip'.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Lin Hongyu/Desktop/fulL vivado/Project_24_10_20 FSM×´Ì¬»ú/project_11.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sequence_detector_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Lin Hongyu/Desktop/fulL vivado/Project_24_10_20 FSM×´Ì¬»ú/project_11.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sequence_detector_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lin Hongyu/Desktop/fulL vivado/Project_24_10_20 FSM×´Ì¬»ú/project_11.srcs/sources_1/new/FSM_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sequence_detector
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lin Hongyu/Desktop/fulL vivado/Project_24_10_20 FSM×´Ì¬»ú/project_11.srcs/sim_1/new/FSM_test_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sequence_detector_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lin Hongyu/Desktop/fulL vivado/Project_24_10_20 FSM×´Ì¬»ú/project_11.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Lin Hongyu/Desktop/fulL vivado/Project_24_10_20 FSM×´Ì¬»ú/project_11.sim/sim_1/behav/xsim'
+"xelab -wto 36f2f012ae924af483ef49988b6636a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sequence_detector_tb_behav xil_defaultlib.sequence_detector_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 36f2f012ae924af483ef49988b6636a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sequence_detector_tb_behav xil_defaultlib.sequence_detector_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.sequence_detector
+Compiling module xil_defaultlib.sequence_detector_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sequence_detector_tb_behav
+
+****** Webtalk v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Lin -notrace
+invalid command name "[4AD4:15C0][2023-09-08T17:39:58]i001:"
+    while executing
+"[4AD4:15C0][2023-09-08T17:39:58]i001: Burn v3.10.4.4718, Windows v10.0 (Build 22621: Service Pack 0), path: C:\Windows\Temp\{93F8E8CC-BAD0-4C9B-B9FE-2..."
+    (file "C:/Users/Lin" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Sun Jan 12 15:03:09 2025...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Lin Hongyu/Desktop/fulL vivado/Project_24_10_20 FSM×´Ì¬»ú/project_11.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sequence_detector_tb_behav -key {Behavioral:sim_1:Functional:sequence_detector_tb} -tclbatch {sequence_detector_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source sequence_detector_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$stop called at time : 52 ns : File "C:/Users/Lin Hongyu/Desktop/fulL vivado/Project_24_10_20 FSM×´Ì¬»ú/project_11.srcs/sim_1/new/FSM_test_tb.v" Line 64
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sequence_detector_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1118.664 ; gain = 6.137
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Jan 12 15:03:50 2025...

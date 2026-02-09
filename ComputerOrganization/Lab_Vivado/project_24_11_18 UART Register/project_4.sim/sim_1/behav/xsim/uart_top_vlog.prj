@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../project_4.srcs/sources_1/ip/inst_rom/inst_rom_sim_netlist.v" \
+"../../../../project_4.srcs/sources_1/ip/fifo_32b_2_8b/fifo_32b_2_8b_sim_netlist.v" \
+"../../../../project_4.srcs/sources_1/new/u_rom.v" \
+"../../../../../../uart串口存储器实验/uart_rx.v" \
+"../../../../../../uart串口存储器实验/uart_tx.v" \
+"../../../../../../uart串口存储器实验/uart_top.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

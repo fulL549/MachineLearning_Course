@@ -1,0 +1,7 @@
+vhdl xpm  \
+"D:/Vivado/2020.1/data/ip/xpm/xpm_VCOMP.vhd" \
+
+vhdl fifo_generator_v13_2_5  \
+"../../../ipstatic/hdl/fifo_generator_v13_2_rfs.vhd" \
+
+nosort

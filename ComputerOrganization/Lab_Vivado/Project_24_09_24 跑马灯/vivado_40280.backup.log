@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun Jan 12 15:04:00 2025
+# Process ID: 40280
+# Current directory: C:/Users/Lin Hongyu/Desktop/fulL vivado/Project_24_09_24 變鎮腑
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent37320 C:\Users\Lin Hongyu\Desktop\fulL vivado\Project_24_09_24 變鎮腑\project_1.xpr
+# Log file: C:/Users/Lin Hongyu/Desktop/fulL vivado/Project_24_09_24 變鎮腑/vivado.log
+# Journal file: C:/Users/Lin Hongyu/Desktop/fulL vivado/Project_24_09_24 變鎮腑\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Lin Hongyu/Desktop/fulL vivado/Project_24_09_24 變鎮腑/project_1.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/Lin Hongyu/Desktop/fulL vivado/project_1' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2020.1/data/ip'.
+update_compile_order -fileset sources_1
+open_hw_manager
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Jan 12 15:04:31 2025...

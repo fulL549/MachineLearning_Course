@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lin Hongyu/Desktop/fulL vivado/project_7/project_7.srcs/sources_1/new/seg_dec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg_dec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lin Hongyu/Desktop/fulL vivado/project_7/project_7.srcs/sim_1/new/seg_dec_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg_dec_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Lin Hongyu/Desktop/fulL vivado/project_7/project_7.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

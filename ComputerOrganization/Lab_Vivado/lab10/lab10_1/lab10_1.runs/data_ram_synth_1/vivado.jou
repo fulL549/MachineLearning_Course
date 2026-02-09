@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Dec 24 11:00:21 2024
+# Process ID: 19952
+# Current directory: D:/desk/Vivado/lab10/lab10_1/lab10_1.runs/data_ram_synth_1
+# Command line: vivado.exe -log data_ram.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source data_ram.tcl
+# Log file: D:/desk/Vivado/lab10/lab10_1/lab10_1.runs/data_ram_synth_1/data_ram.vds
+# Journal file: D:/desk/Vivado/lab10/lab10_1/lab10_1.runs/data_ram_synth_1\vivado.jou
+#-----------------------------------------------------------
+source data_ram.tcl -notrace
